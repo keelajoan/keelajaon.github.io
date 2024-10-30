@@ -1,0 +1,48 @@
+#cph1 {  
+    text-align: center;
+    font-family: Arial ;
+
+}
+.p1div{
+    font-family:Helvetica ;
+    text-align: center;
+    padding: 24px;
+}
+#cp1{
+    background-color:#5f0f40 ;
+    color: white;
+}
+#cp2{
+    background-color:#9a031e ;
+    color: black;
+}
+#cp3{
+    background-color:#fb8b24;
+    color:black;
+}
+
+
+#cph2
+ {  
+    text-align: center;
+    font-family: Arial ;
+
+}
+.p2div{
+    font-family:Helvetica ;
+    text-align: center;
+    padding: 24px;
+}
+#cp4{
+    background-color:#ff595e;
+    color: white;
+}
+#cp5{
+    background-color:#ffca3a;
+    color: black;
+}
+#cp6{
+    background-color:#8ac926;
+    color:black;
+}
+
