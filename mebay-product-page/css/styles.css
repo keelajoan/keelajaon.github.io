@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif; 
+}
+
+#three-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#column-1 {
+    background-color: lightblue;
+}
+
+#column-2 {
+    background-color: darkblue;
+    color: white;
+}
+
+#column-3 {
+    background-color: aquamarine;
+}
