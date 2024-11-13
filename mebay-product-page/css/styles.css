@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.justify-flex-start {
+    justify-content: flex-start;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+
+
 body {
     margin: 0px;
     font-family: sans-serif; 
@@ -10,46 +19,126 @@ body {
 #three-columns {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
-img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
 
-}
 
 #column-2{
+    padding: 36px 0px;
+    img{
+
+        width: 500px;
+        height: 500px;
+        border-bottom: solid lightgray;
+        margin-left: 12px;
+        margin-right: 12px;
+       
+    }
    
 }
 #column-1{
-    font-size: 40px;
-    span{
-        display: inline-block;
+    img{
+        width: 150px;
+        border: solid;
+        border-radius: 40px;
+    }
+    padding:6px 6px;
+    border-right: 1px solid lightgrey;
+    margin-top: 25px;
+    
+    font-size: 24px;
+    h1{
+        display:flex;
+        margin-top: 0px;
     }
     #sp1{
         color: purple;
     }
-    sp2{
+    #sp2{
         color: blue;
     }
-    span2{
+    #sp3{
         color: orange;
     }
-    span3{color: red;
+    #sp4{color: red;
         
     }
-    span4{
-        color: green;
-    }
+    #sp5{
+        color: green; 
+
 }
 
+}
 #column-2 {
   
     color: black;
+    text-align: center;
+
 }
 
 #column-3 {
-    background-color: aquamarine;
+
     padding: 20px;
+    border-left: 1px solid lightgrey;
+    margin-top: 25px;
+    img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+}
+h2,h4{
+    text-decoration: underline;
+}
+button{
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 15px 150px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+
+}
+.button2{
+    margin-top: 15px ;
+    background-color: white;
+    border: solid lightblue;
+    color: black;
+    padding: 15px 150px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+
+}
+.button3{
+    margin-top: 15px ;
+    background-color: white;
+    border: solid lightblue;
+    color: black;
+    padding: 15px 150px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+
+}
+#sellerinfo{
+    border: solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+#shipping{
+    border: solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
 }
