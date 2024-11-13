@@ -8,19 +8,48 @@ body {
 }
 
 #three-columns {
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 
-#column-1 {
-    background-color: lightblue;
+}
+
+#column-2{
+   
+}
+#column-1{
+    font-size: 40px;
+    span{
+        display: inline-block;
+    }
+    #sp1{
+        color: purple;
+    }
+    sp2{
+        color: blue;
+    }
+    span2{
+        color: orange;
+    }
+    span3{color: red;
+        
+    }
+    span4{
+        color: green;
+    }
 }
 
 #column-2 {
-    background-color: darkblue;
-    color: white;
+  
+    color: black;
 }
 
 #column-3 {
     background-color: aquamarine;
+    padding: 20px;
 }
