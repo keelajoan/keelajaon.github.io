@@ -1,0 +1,77 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+.card-container{
+    width: 90vw;
+    margin: 40px auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.card-style-3{
+    width: 350px;
+    background: linear-gradient(-50deg, #6adf55, #b2d79f,#97db93);
+    border: solid 15px #f0e224 ;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style:ridge;
+    img{
+        border: 5px solid #f0e224 ;
+        width:100%;
+        object-fit:cover;
+        margin-top: -40px;
+    
+    
+    }
+   
+    }
+    .name{
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 0px;
+        
+        
+
+    }
+   
+
+
+.health{
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    left: 210px  
+}
+P{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    
+}
+
+    
+.animagram-footer{
+    text-align: center;
+    font-size: 24px;
+    text-indent: 24px;
+    margin-left: -20px;
+    padding-right: 12px;
+    display: flex;
+    padding-bottom: 25px;
+
+}
+
+
