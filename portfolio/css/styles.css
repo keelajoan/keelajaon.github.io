@@ -1,0 +1,145 @@
+@keyframes slid {
+    to{
+        background-position: 200%;
+    }
+}
+*{
+    box-sizing: border-box;
+    
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end; 
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #69626D;
+    padding: 40px;
+    font-size: 30px;
+    &:hover{
+        background-color: transparent;
+        color:#3C3744;
+        
+    }
+    
+ 
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background: #FBFFF1;
+    h3{
+        color:  #3C3744;
+        font-size: 30px;
+    }
+
+    
+
+}
+.contain{
+    width: 80vw;
+    margin:0px auto;
+    width: 1200px;
+}
+#hero1{
+    color: #69626D;
+   
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    justify-content: center;
+
+}
+.header{
+    background-image:url(../images/hero2.jpg);
+    background-size: cover;
+    background-position: center center;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    p{
+        text-align: left;
+        font-size: 30px;
+
+    }
+    h1{
+        font-size: 70px;
+        /* padding-left: 12px; */
+        /* padding-right: 12px; */
+        color: #3C3744;
+        
+
+    }
+    
+
+}
+.card{
+    width: 100%;
+    border: 1px solid #3C3744;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -4px 4px 12px lightgray;
+    margin: 0px;
+    &:hover{
+        background-color: #B4C5E4;
+        color: grey;
+    }
+    /* background: linear-gradient(-50deg, lightgray, white,lightgray); */
+
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    
+    }
+    a{
+        font-size: 24px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: #3C3744;
+        font-size: 25px;
+        &:hover{
+            background-color: transparent;
+            color: grey;
+            text-decoration: underline;
+            
+        }
+        
+    }
+        
+    p{
+        font-size: 18px;
+        text-align: left;
+        
+    }
+}
+.card3 img {
+    object-position: bottom;
+}
+
+
+  .app{
+        gap:20px;
+        justify-content: center;
+        width: 50vw;
+        margin: 0px auto;
+    
+    } 
+    #apppix{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }        
+
+      
+  
+    
+  
+    
