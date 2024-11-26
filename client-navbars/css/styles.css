@@ -48,7 +48,9 @@ body{
 
 }
 #level2{
-    /* background-color:#b99470; */
+    background-color:#b99470;
+    display: flex;
+    align-items: center;
     
     
 }
