@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/*
+    Navbar styling **********************************************
+*/
+#navbar {
+    background:#c4c3e3;
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fdf8f2;
+    padding: 24px;
+}
+
+#navbar a:hover {
+    background:#504e76;
+}
+
+#navbar #logo {
+    color: #fcdd9d;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+/*
+    Dropdown styling ********************************************
+*/
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.25s,
+        visibility 0.25s;
+
+    /*
+        If your dropdown menu seems to be placed
+        behind content on your page, you may need
+        to include a z-index, which pull it 
+        closer to you as a viewer.
+    */
+    z-index: 10;
+}
+
+/*
+    This selector targets dropdown-containers
+    that are the last child of their parent,
+    and looks inside of them for a dropdown-menu.
+
+    If found, we target it and anchor it
+    to the right of its parent container
+*/
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+
+/*
+    This is the selector responsible for
+    revealing the dropdown menu.
+
+    Note that the :hover pseudo-class is 
+    attached to the CONTAINER, not the MENU.
+
+    We can't hover over the menu when it's
+    hidden; we only want it to display when
+    the trigger link in the container is 
+    hovered over.
+*/
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    background-color:#504e76;
+    width: 100%;
+    min-width: 200px;
+}
+
+/*
+    We need to be a bit more specific with
+    our selectors in order to override the
+    anchor hover state we declared earlier.
+
+    To do so, we need to include both
+    #navbar and .dropdown-menu.
+
+    Also note, using background-color
+    won't work, because in our original
+    anchor hover, we used the background
+    property to set a linear-gradient().
+
+    So, to override it, we need to use
+    the same shorthand background property.
+*/
+#navbar .dropdown-menu a:hover {
+    background:#c4c3e3;
+}
+.Dogs{
+    background-image: url("../images/dogs.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+.dog1{
+    background-color: #fcdd9d;
+    border: 1px solid;
+    width: 50%; 
+    min-width: 600px;
+    margin: 0px auto; 
+    display: grid;
+    justify-content: center;
+    padding: 100px;
+    margin-top: 50px;
+    img{
+        margin: 0px auto;
+        max-width: 450px;
+        border-radius: 30px;
+        border: 8px solid #504e76;
+    
+    }
+    p{
+        text-align: center;
+    }
+    h1, h2{
+        text-align: center;
+        color: #504e76;
+    }
+    
+    
+   
+}
+
+@media screen and ( max-width: 768px) and ( min-width: ) {
+    #navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Dogs{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 1fr
+        ;
+    }
+
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
