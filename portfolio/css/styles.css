@@ -121,12 +121,10 @@ body{
 
 
   .app{
-        gap:20px;
-        justify-content: center;
-        width: 50vw;
-        margin: 0px auto;
-    
-    } 
+        width: 50%; 
+        min-width: 500px;
+        margin: 0px auto; 
+    }
     #apppix{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
