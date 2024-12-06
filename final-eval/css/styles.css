@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif; 
+}
+
+
+.center-column {
+    background-color: lightblue;
+    width: 50%; 
+    min-width: 500px;
+    margin: 0px auto; 
+    
+}
+.center-column  h1{
+    font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+
+}
+.single-column {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#card-section {
+   
+    padding: 48px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
