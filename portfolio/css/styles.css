@@ -157,7 +157,11 @@ p{
         
         
     }
-    #mockups{
+    b{
+        color: black;
+        font-size: 26px;
+    }
+    #mockups, .moodboard {
         display: grid;
         grid-template-columns: 300px;
         padding: 12px;
@@ -177,11 +181,21 @@ p{
     gap: 10px;
     margin: 0px auto;
     }
-    #wireframing img,#hi-fi img{
+    #wireframing img, #hi-fi img{
         width: 300px;
     }
-        
-        
+    .protoyed img{
+        width: 250px;
+
+    }
+    .protoyed{
+        display: grid;
+        grid-template-columns: 1fr 1fr 300px;
+        padding: 12px;
+        gap: 10px;
+        /* margin: 0px auto; */
+        }
+
     
    
     
