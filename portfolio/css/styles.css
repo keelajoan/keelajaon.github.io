@@ -26,7 +26,7 @@
 body{
     margin: 0px;
     font-family: sans-serif;
-    background: #FBFFF1;
+    background: EBE6DB;
     h3{
         color:  #3C3744;
         font-size: 30px;
@@ -70,10 +70,18 @@ body{
 h1{
     font-size: 70px;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-style: normal;
+    color: #DF8142;
+    
+
+}
+#intro{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-style: normal;
     color: #3C3744;
-    
 
 }
 h2,h3{
@@ -88,20 +96,25 @@ h4{
     font-family:"Roboto", sans-serif;
 
 }
-.card{
+.uximage{
+    flex: 300px;
+    margin: 24px;
+    padding: 24px;
     width: 100%;
-    border: 1px solid #3C3744;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: -4px 4px 12px lightgray;
-    margin: 0px;
-    &:hover{
-        background-color: #B4C5E4;
-        color: grey;
-    }
-    /* background: linear-gradient(-50deg, lightgray, white,lightgray); */
+}
 
-    
+.card{
+    flex: 300px;
+    border: 0.5px solid black;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0px;
+        transition:
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
     img{
         width: 100%;
         object-fit: cover;
@@ -118,7 +131,6 @@ h4{
         &:hover{
             background-color: transparent;
             color: grey;
-            text-decoration: underline;
             
         }
         
@@ -126,6 +138,12 @@ h4{
         
     
 }
+.card1:hover{
+    background-color:#fffbf0;
+    box-shadow: 4px 6px 6px #0003;
+    transform: translateY(-4px);
+}
+
 p{
     font-size: 18px;
     text-align: left;
@@ -161,7 +179,7 @@ p{
         color: black;
         font-size: 26px;
     }
-    #mockups, .moodboard {
+    #mockups, .moodboard{
         display: grid;
         grid-template-columns: 300px;
         padding: 12px;
@@ -195,6 +213,79 @@ p{
         gap: 10px;
         /* margin: 0px auto; */
         }
+
+        #footer{
+            padding: 50px;
+            margin-top: 80px;
+            display: grid;
+            justify-content: center;
+            a {text-decoration: none;
+             color: #69626D;
+        }  
+    }
+    #contact{
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #linkedin{
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+
+    }
+    @media screen and (max-width: 480px) {
+        #navbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+        }
+        #navbar a {
+            padding: 0px;
+        }.contain{
+            flex-direction: column;
+            gap: 24px;
+            width: 500%;
+    
+        }
+           h1{
+            margin: 0px;
+    
+        }
+        .contain, .card1{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "t1"
+            "i1"
+            "i2"
+            "i3"
+            "i4"
+            "t2"
+    
+            ;
+        }
+       
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .contain{
+        width: 90vw;
+        margin: 48px auto;
+        max-width: 800px;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #931F28;
+        color: white;
+        text-align: center;
+     }
+
+
 
     
    
