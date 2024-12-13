@@ -12,21 +12,48 @@
 
 #navbar a {
     text-decoration: none;
-    color: #69626D;
+    display: inline-block;
+    color: black;
     padding: 40px;
     font-size: 30px;
-    &:hover{
-        background-color: transparent;
-        color:#3C3744;
-        
+   
     }
-    
- 
+   
+.dropdown-container {
+    position: relative;
 }
+.dropdown-menu {
+    position: absolute;
+    padding: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.25s,
+        visibility 0.25s;
+
+    z-index: 10;
+}
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-menu a {
+    background-color:#ffb51f;
+    width: 100%;
+    min-width: 200px;
+}
+#navbar .dropdown-menu a:hover {
+    background: #ff789f;
+}
+
+
 body{
     margin: 0px;
     font-family: sans-serif;
-    background: EBE6DB;
+    background: #ffe4b3;
     h3{
         color:  #3C3744;
         font-size: 30px;
@@ -40,10 +67,7 @@ body{
     margin:0px auto;
     width: 1200px;
 }
-#hero1{
-    color: #69626D;
    
-}
 .card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,22 +203,31 @@ p{
         color: black;
         font-size: 26px;
     }
-    #mockups, .moodboard{
+    #mockups{
         display: grid;
-        grid-template-columns: 300px;
+        width: 100%;
         padding: 12px;
         margin: 0px auto;
-        
-
+    
     }
+    .moodboard{
+        width:100%;
+        display: grid;
+        margin: 0px auto;
+    
+        }
+
+
+
     #mockups img{
-        width: 300%;
-        /* width: 700px; */
+        width: 600%;
+    
 
     }
     #wireframing, #hi-fi{
     display: grid;
     grid-template-columns: 300px 300px;
+    width: 100%;
     padding: 24px;
     gap: 10px;
     margin: 0px auto;
@@ -248,8 +281,16 @@ p{
             width: 500%;
     
         }
-           h1{
+        .center-column{
+            p{
+                text-align: center;
+                
+            }
+        }
+           h1,h3{
             margin: 0px;
+            text-align: center;
+            font-size: 30px;
     
         }
         .contain, .card1{
@@ -263,6 +304,10 @@ p{
             "t2"
     
             ;
+        }
+        p{
+            text-align: center;
+            
         }
        
     }
@@ -283,6 +328,17 @@ p{
         background-color: #931F28;
         color: white;
         text-align: center;
+     }
+     #mockups{
+        grid-template-columns: 150px;
+        grid-template-areas:
+        "t1"
+        "i1"
+        "i2"
+        "i3"
+        "i4"
+        "t2"
+
      }
 
 
