@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'gilgongo_doror';
+    src: url('../fonts/gilgond_-webfont.woff2') format('woff2'),
+         url('../fonts/gilgond_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.contain{
+    width: 90vw;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+
+#navbar {
+    background: black;
+    position: sticky;
+
+    .contain{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+   
+}
+
+.dropdown-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    &:hover{
+        background-color: #931F28;
+
+    }
+}
+
+
+#navbar #logo a:hover{
+    background: transparent;
+}
+
+
+
+
+#navbar #logo {
+    width: 120px;
+    margin: 10px;
+    margin-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+   
+}
+
+
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.25s,
+        visibility 0.25s;
+    z-index: 10;
+
+}
+
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    background-color: #931F28;
+    width: 100%;
+    min-width: 200px;
+    &:hover{
+        background-color: #61C6C4;
+    }
+}
+
+
+.contain-grid{
+    background-image:url(../images/resturent.jpg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 60px ;
+    p{
+        font-size: 26px;
+        font-weight: 100;
+        color: white;
+        margin: 30px;
+        background-color: #931F28;
+        padding: 60px;
+        max-width: 600px;
+    }
+    
+
+    h2{
+        font-family:'gilgongo_doror';
+        font-size: 60px;
+        margin: 30px;
+        color: #61C6C4;
+        background-color: #931F28;
+        padding: 60px;
+
+
+    }
+
+    a{
+        font-size: 24px;
+        display: inline-block;
+        background-color: #931F28;
+        font-family: 'gilgongo_doror';
+        border-radius: 12px;
+        color: white;
+        text-decoration: none;
+        margin: 40px;
+        padding: 24px;
+        margin-top: 36px;
+        &:hover{
+            background-color: #61C6C4;
+        }
+
+    }
+    
+    
+}
+
+.contain{
+    width: 70vw;
+    margin:0px auto;
+    width: 1200px;
+}
+.card {
+    
+    max-width: 400px;
+    width: 80vw;
+    margin: 20px auto;
+    max-width: 400px;
+    flex-wrap: wrap;    
+    gap: 10px;
+    transition: 0.3s;
+  }
+  
+  
+  h1{
+    font-family:"gilgongo_doror";
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 30px;
+
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    justify-content: center;
+   
+    
+  }
+  .card1{
+    justify-content: center;
+    border: 1px solid #931F28;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: fit-content;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    img{
+        padding: 15px;
+        border-radius: 12px;
+    }
+    &:hover{
+        background-color: #61C6C4;
+        color: yellow;
+    }
+
+
+    h2{
+        font-family:"gilgongo_doror";
+        font-size: 40px;
+        text-align: center;
+
+    }
+    a{
+        font-size: 24px;
+        align-items: center;
+        font-family: "gilgongo_doror";
+        margin-top: 12px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: #3C3744;
+        font-size: 25px;
+        &:hover{
+            background-color: transparent;
+            color: grey;
+            
+        }
+        
+    }
+        
+    p{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    h3{
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+  }
+  .card{
+    width: 100%;
+    border: 1px solid #931F28;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -4px 4px 12px lightgray;
+    margin: 0px;
+    &:hover{
+        background-color: #61C6C4;
+        color: yellow;
+    }
+
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    
+    }
+    a{
+        font-size: 24px;
+        text-align: center;
+        font-family: "gilgongo_doror";
+        margin-top: 12px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: #3C3744;
+        font-size: 25px;
+        &:hover{
+            background-color: transparent;
+            color: grey;
+            
+        }
+        
+    }
+        
+    p{
+        font-size: 20px;
+        text-align: left;
+        
+    }
+}
+@media screen and (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    #navbar a {
+        padding: 0px;
+    }.contain{
+        flex-direction: column;
+        gap: 24px;
+        width: 500%;
+
+    }
+    .contain h1{
+        margin: 0px;
+        font-size: 32px;
+
+    }
+    .card-container, .card1{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "t1"
+        "i1"
+        "i2"
+        "i3"
+        "i4"
+        "t2"
+
+        ;
+    }
+   
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.contain{
+    width: 90vw;
+    margin: 48px auto;
+    max-width: 800px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #931F28;
+    color: white;
+    text-align: center;
+ }
+
+
+
+
+
