@@ -296,7 +296,7 @@ p{
         font-size: 20px;
 
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1350px) {
         #navbar {
             flex-direction: column;
             align-items: center;
@@ -326,7 +326,6 @@ p{
             
         }
     
-        }
         .contain, .card1{
             grid-template-columns: 1fr;
             grid-template-areas:
@@ -340,10 +339,6 @@ p{
             ;
         }
        
-        
-
-       
-
     
     img{
         width: 100%;
@@ -375,8 +370,7 @@ p{
 
      }
      
-
-
+}
 
     
    
