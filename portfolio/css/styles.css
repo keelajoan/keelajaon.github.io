@@ -10,6 +10,7 @@
 
 }
 
+
 #navbar a {
     text-decoration: none;
     display: inline-block;
@@ -42,6 +43,7 @@
 }
 .dropdown-menu a {
     /* background-color:#ffb51f; */
+    background:#132fba;
     width: 100%;
     min-width: 200px;
 }
@@ -53,14 +55,28 @@
 body{
     margin: 0px;
     font-family: sans-serif;
-    background-image: linear-gradient(to right top, #ffffff, #fff1ff, #ffe0e7, #ffd6bb, #fdd88f);
-    h3{
+    background-image:linear-gradient(to right top, #e0e9eb, #e6ecf0, #edeff4, #f3f2f7, #f9f6f9);
         color:  #3C3744;
         font-size: 30px;
     }
 
     
 
+#hero-1 {
+    /* background-size: cover; */
+    background-position: center right;
+    flex-direction: column;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding-left: 300px;
+    h1{
+        font-size: 200px;
+        color: #3C3744;
+        font-weight: 300;
+        
+    }
 }
 .contain{
     width: 80vw;
@@ -73,6 +89,7 @@ body{
     grid-template-columns: 1fr 1fr;
     gap:20px;
     justify-content: center;
+    padding-top: 60px;
 
 }
 .header{
@@ -114,12 +131,23 @@ h1{
 
 }
 #intro{
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #3C3744;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 4px;
+    max-width: 1021px;
+    p{
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #3C3744;
+    }
+   
 
+}
+hr{
+    margin: 30px;
 }
 h2,h3{
     font-size: 70px;
@@ -268,32 +296,36 @@ p{
         font-size: 20px;
 
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1350px) {
         #navbar {
             flex-direction: column;
             align-items: center;
             padding: 20px 0px;
         }
         #navbar a {
-            padding: 0px;
+            padding: 30px;
         }.contain{
             flex-direction: column;
             gap: 24px;
             width: 500%;
     
         }
-        .center-column{
+        #hero-1{
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            margin: 2px;
+            font-size: 32px;
+            h1{
+                font-size: 90px;
+            }
             p{
                 text-align: center;
-                
+                font-size: 30px;
             }
+            
         }
-           h1,h3{
-            margin: 0px;
-            text-align: center;
-            font-size: 30px;
     
-        }
         .contain, .card1{
             grid-template-columns: 1fr;
             grid-template-areas:
@@ -306,12 +338,8 @@ p{
     
             ;
         }
-        p{
-            text-align: center;
-            
-        }
        
-    }
+    
     img{
         width: 100%;
         object-fit: cover;
@@ -341,8 +369,8 @@ p{
         "t2"
 
      }
-
-
+     
+}
 
     
    
