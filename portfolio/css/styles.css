@@ -4,7 +4,115 @@
     box-sizing: border-box;
     
 }
-#navbar {
+.topnav {
+    
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #122c4f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Roboto";
+  }
+  
+  .active {
+    color: #3C3744;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #122c4f;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Roboto";
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e0e9eb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+/* #navbar {
     display: flex;
     justify-content: flex-end; 
 
@@ -43,14 +151,7 @@
 }
 .dropdown-menu a {
     /* background-color:#ffb51f; */
-    background:#132fba;
-    width: 100%;
-    min-width: 200px;
-}
-#navbar .dropdown-menu a:hover {
-    background: #ff789f;
-}
-
+   ÷
 
 body{
     margin: 0px;
@@ -108,49 +209,41 @@ body{
     
 
 }
-#hero-1 {
-    background-size: cover;
+.hero1 {
+    text-align: center;
     background-position: center right;
-    height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    h1{
-        font-size: 120px;
-        padding-left: 100px;
+}
+    #maintitle {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: #3C3744;
+    /* text-transform: uppercase; */
+        
     }
 
-}
-h1{
-    font-size: 70px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #DF8142;
-    
 
-}
+
 #intro{
-    display: flex;
-    justify-content: flex-start;
+    letter-spacing: .03em;
     align-items: left;
-    padding: 4px;
     max-width: 1021px;
-    p{
-        font-size: 30px;
+
+        font-size: 40px;
         font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
         color: #3C3744;
     }
    
 
-}
+
 hr{
     margin: 30px;
 }
 h2,h3{
-    font-size: 70px;
+    font-size: 30px;
     font-family: "Nunito Sans", serif;
     font-weight: 700;
     font-style: normal;
@@ -320,8 +413,8 @@ p{
                 font-size: 90px;
             }
             p{
-                text-align: center;
-                font-size: 30px;
+                text-align: left;
+                font-size: 26px;
             }
             
         }
