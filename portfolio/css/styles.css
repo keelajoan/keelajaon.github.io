@@ -28,13 +28,12 @@
     display: none;
   }
   
-  /* Dropdown container - needed to position the dropdown content */
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Style the dropdown button to fit inside the topnav */
+ 
   .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -81,87 +80,6 @@
   }
   
 
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-/* #navbar {
-    display: flex;
-    justify-content: flex-end; 
-
-}
-
-
-#navbar a {
-    text-decoration: none;
-    display: inline-block;
-    color: black;
-    padding: 40px;
-    font-size: 30px;
-   
-    }
-   
-.dropdown-container {
-    position: relative;
-}
-.dropdown-menu {
-    position: absolute;
-    padding: 50px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 
-        opacity 0.25s,
-        visibility 0.25s;
-
-    z-index: 10;
-}
-.dropdown-container:last-child .dropdown-menu {
-    right: 0px;
-}
-.dropdown-container:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-}
-.dropdown-menu a {
-    /* background-color:#ffb51f; */
-   ÷
-
-body{
-    margin: 0px;
-    font-family: sans-serif;
-    background-image:linear-gradient(to right top, #e0e9eb, #e6ecf0, #edeff4, #f3f2f7, #f9f6f9);
-        color:  #3C3744;
-        font-size: 30px;
-    }
-
-    
 
 #hero-1 {
     /* background-size: cover; */
@@ -262,13 +180,12 @@ h4{
 }
 
 .card{
-    flex: 300px;
+    display: grid;
     border: 0.5px solid black;
     margin: 24px;
     padding: 24px;
     border-radius: 12px;
     text-align: center;
-    margin: 0px;
         transition:
         background-color 0.5s,
         box-shadow 0.5s,
@@ -286,12 +203,16 @@ h4{
         text-decoration: none;
         color: #3C3744;
         font-size: 25px;
+        font-family: "Nunito Sans", serif;
         &:hover{
             background-color: transparent;
             color: grey;
             
         }
         
+    }
+    p{
+        text-align: center;
     }
         
     
@@ -333,16 +254,21 @@ p{
         font-size: 26px;
     }
     .moodboard{
-        width:100%;
         display: grid;
-        margin: 0px auto;
-    
+        max-width:100%;
+
+        justify-content: center;
+        
+
         }
 
 
 
     #mockups img{
-        width: 600%;
+        max-width: 100%;
+        display: block;
+        align-items: center;
+
     
 
     }
@@ -390,19 +316,34 @@ p{
 
     }
     @media screen and (max-width: 1350px) {
-        #navbar {
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 0px;
-        }
-        #navbar a {
-            padding: 30px;
-        }.contain{
+
+    }.contain{
             flex-direction: column;
             gap: 24px;
             width: 500%;
     
         }
+    .center-columm{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        margin: 2px;
+        font-size: 32px;
+        h1{
+            font-size: 90px;
+        }
+        p{
+            text-align: left;
+            font-size: 26px;
+        }
+        
+    }
+
+
+
+
+    
         #hero-1{
             align-items: center;
             justify-content: center;
@@ -418,6 +359,7 @@ p{
             }
             
         }
+
     
         .contain, .card1{
             grid-template-columns: 1fr;
@@ -443,6 +385,7 @@ p{
         max-width: 800px;
     }
     .footer {
+        font-family: "Nunito Sans", serif;
         position: fixed;
         left: 0;
         bottom: 0;
@@ -462,8 +405,37 @@ p{
         "t2"
 
      }
-     
-}
+    
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
 
     
    
