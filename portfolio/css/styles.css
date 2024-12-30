@@ -347,6 +347,136 @@ ul{
 
     }
 
+    /* IPAD RESPONSIVENESS */
+    @media screen and (max-width: 1180px){  
+        .contain{
+       flex-direction: column;
+       gap: 24px;
+       width: 500%;
+    }
+    iframe {
+       display:none ;
+       
+       }
+    #main-content{
+       width: 550px;
+       align-items: center;
+       justify-content: center;
+       img{
+           width: 100%;
+           max-width: 400px;
+           height: auto;
+          
+       }
+       p{
+           font-size: 25px;
+           font-family: "Nunito Sans", serif;
+       }
+       h1{
+           font-size: 45px;
+           font-weight: 700;
+           font-family:"Roboto", sans-serif ;
+           margin-top: 60px;
+       }
+           
+   
+       b{
+           font-size: 25px;
+           font-family:"Nunito Sans", serif ;
+       }
+   
+       
+       b{
+           color: black;
+           font-size: 25px;
+           font-family: "Nunito Sans", serif;
+       }
+   }
+   #maininfo {
+           font-size: 25px;
+   
+       }
+      
+   }
+   
+
+       #hero-1{
+           align-items: center;
+           justify-content: center;
+           padding: 30px;
+           margin: 2px;
+           font-size: 32px;
+           h1{
+               font-size: 90px;
+           }
+           p{
+               text-align: left;
+               font-size: 26px;
+           }
+           
+       }
+
+   
+       .contain, .card1{
+           grid-template-columns: 1fr;
+           grid-template-areas:
+           "t1"
+           "i1"
+           "i2"
+           "i3"
+           "i4"
+           "t2"
+   
+           ;
+       }
+      
+   
+ 
+   .contain{
+       width: 90vw;
+       margin: 48px auto;
+       max-width: 800px;
+   }
+ 
+   
+    #wireframing, #hi-fi{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       padding: 12px;
+       gap: 5px;
+       }
+       .protoyed img{
+           width: 200px;
+   
+       }
+       #protoyed{
+           display: grid;
+           grid-template-columns:1fr 1fr;
+           gap: 20px;
+           padding: 12px;
+           img{
+               width: 100%;
+           }
+           
+           
+           }
+           
+           #wireframing, #hi-fi{
+               flex: 50%;
+               max-width: 150%;
+               padding: 12px;
+               gap:10px ;
+           img{
+               width: 200px;
+               margin-top: 8px;
+               vertical-align: middle;
+               width: 100%;
+           }
+
+           
+       }
+   
+
 
 
     @media screen and (max-width: 800px){  
