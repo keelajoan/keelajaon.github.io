@@ -6,7 +6,7 @@
 }
 body {
     margin: 0px;
-    background-color: #fcf7ed;
+    background-color:white;
 
 }
 .topnav {
@@ -121,7 +121,13 @@ body {
            
     
 /* THIS LINE STARTS THE CARD CODE */
-
+#projects{
+    text-align: center;
+    align-items: center;
+    font-family:"Roboto" ;
+    color: #3C3744;
+    font-size: 70px;
+}
 .contain{
     width: 50vw;
     margin:0px auto;
@@ -227,6 +233,7 @@ h4{
     img{
         max-width: 100%;
          height: auto;
+          
        
     }
     
@@ -265,16 +272,16 @@ h4{
    
 }
 } 
-#protoyed{
+.appdemo{
     display: grid;
-    grid-template-columns: 1fr 1fr 300px;
-    padding: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
-    img{
-        width: 100%;
-    }
-    
-    }
+    max-width: 100%;
+    height: auto;
+    /* border: 10px groove purple ;
+    padding: 20px;
+    border-radius: 5px; */
+}
 
 iframe {
     max-width: 100%;
@@ -294,17 +301,9 @@ ul{
     #wireframing, #hi-fi{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap:12px;
-        justify-content: center;
-        max-width: 700px;
-        padding: 12px;
-        gap:10px ;
-    img{
-        width: 400px;
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-    }
+        gap: 12px;
+        max-width: 100%;
+        height: auto;
 }
     
     
@@ -334,6 +333,15 @@ ul{
         font-size: 20px;
 
     }
+    .mockups{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        gap: 12px;
+        max-width: 100%;
+        height: auto;
+       
+    }
+    
    
     
  
@@ -365,10 +373,11 @@ ul{
           width: 100%;
           text-align: left;
         }
+    
 
     #maintitle {
         margin: auto;
-        width: 600px;
+        width: 1000px;
         align-items: center;
         justify-content: center;
         font-size: 60px;
@@ -383,7 +392,7 @@ ul{
 
      #intro{
         margin: auto;
-        width: 600px;
+        width: 1000px;
         align-items: center;
         justify-content: center;
         letter-spacing: .03em;
@@ -393,6 +402,7 @@ ul{
          margin: auto;
          padding: 30px;
         } 
+    
 
 
  #main-content{
@@ -436,14 +446,14 @@ ul{
     .contain{
         width: 50vw;
         margin:0px auto;
-        width: 400px;
+        width: 500px;
     }
     .card {
         
         max-width: 350px;
         width: 80vw;
         margin: 20px auto;
-        max-width: 400px;
+        max-width: 500px;
         flex-wrap: wrap;    
         gap: 10px;
         transition: 0.3s;
@@ -498,7 +508,8 @@ ul{
     iframe {
         display:none ;
         
-        }
+    }
+}
 
 /*NAVBAR RESPONSIVNESS  */
         @media screen and (max-width: 600px) {
@@ -625,14 +636,7 @@ ul{
        
         
       }
-      
-    
-   
-}
-
-  
-
- #wireframing, #hi-fi{
+      #wireframing, #hi-fi{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 12px;
@@ -672,6 +676,7 @@ ul{
         display:none ;
         
         }
+    }
 
     
    
