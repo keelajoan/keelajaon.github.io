@@ -334,13 +334,25 @@ ul{
 
     }
     .mockups{
-        display: grid;
-        grid-template-columns: 600px 600px;
-        gap: 12px;
-        max-width: 100%;
-        height: auto;
-       
-    }
+            display: grid;
+            grid-template-columns: 100% 1000px;
+            grid-template-areas: 
+            "c1 c2"
+            "c3 c3"
+        }
+        #d6-cell1{
+            grid-area: c1;
+        }
+        #d6-cell2{
+            grid-area: c2;
+        }
+        #d6-cell3{
+            grid-area: c3;
+        }
+        
+        
+
+
     
    
     
