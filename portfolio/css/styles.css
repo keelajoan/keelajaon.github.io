@@ -225,6 +225,7 @@ h4{
 
 
 /* THIS LINE STARTS THE  APP CODE*/
+
 #main-content{
     margin: auto;
     width: 850px;
@@ -333,23 +334,30 @@ ul{
         font-size: 20px;
 
     }
-    .mockups{
-            display: grid;
-            grid-template-columns: 100% 1000px;
-            grid-template-areas: 
-            "c1 c2"
-            "c3 c3"
-        }
-        #d6-cell1{
-            grid-area: c1;
-        }
-        #d6-cell2{
-            grid-area: c2;
-        }
-        #d6-cell3{
-            grid-area: c3;
-        }
-        
+    
+#layout {
+    max-width: 800px;
+    margin: 48px auto;
+    text-align: center;
+    h2{
+        font-family:"Roboto", sans-serif ;
+        font-size: 70px;
+        color: #3C3744;
+    }
+    p{
+        font-family:"Nunito Sans", serif ;
+    }
+    
+}
+.basic-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.basic-grid-gallery img {
+    width: 100%;
+    gap: 12px;
+}
         
 
 
@@ -418,12 +426,12 @@ ul{
 
 
  #main-content{
-    width: 300px;
+    width: 600px;
     align-items: center;
     justify-content: center;
     img{
         width: 100%;
-        max-width: 400px;
+        /* max-width: 500px; */
         height: auto;
        
     }
