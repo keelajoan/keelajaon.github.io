@@ -228,18 +228,17 @@ h4{
 
 #main-content{
     margin: auto;
-    /* width: 850px; */
-    min-width: 600px;
     max-width: 1200px;
-    
     align-items: center;
     justify-content: center;
-    img{
-        max-width: 100%;
-         height: auto;
-          
-       
+    #mockup1{
+        max-width: 600px;
+        img{
+            width: 1200px;
+        }
     }
+
+    
     
     #maininfo {
         font-size: 26px;
@@ -261,9 +260,7 @@ h4{
         text-wrap: wrap;
         font-family:"Nunito Sans", serif ;
     }
-    img{
-        max-width:100%;
-    }
+    
 
     
     b{
@@ -278,43 +275,81 @@ h4{
 }
 
 
-#two-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 36px;
+       .single-column {
+        min-width: 600px;
+        max-width: 1200px;
+        margin:0px auto;}
+        
+        .main-section {
+        padding: 48px;
+    }
+
+        .side-by-side {
+        display: flex;align-items: center;margin: 48px 0px;}
+        
+        
+        .side-by-side .image-container {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        
+    }
+        
+        .side-by-side .text-container {
+        flex: 1;padding: 36px;}
+        
+        
+        .side-by-side .image-container img {
+        width: 100%;
+    }
     
-} 
+
+    .single {
+        display: flex;
+        margin:auto;
+        align-items: center;
+        img{
+            width: 380px;
+        }
     
-    #column-1,
-    #column-2 {
+ 
+    }
+        
+        #main .container{
+        padding: 30px;
+        width: 1000px;
+
+    }
+
+        .sideside {
         align-items: center;
         margin: 48px 0px;
-    
+        max-width: 1000px;
+        
     }
-    
-    #column-1 {
-    width: 450px;
-   
-
-    }
-    
-    
-    #column-2 {
+        
+        
+        .sideside .image-container1 {
         display: grid;
-        grid-template-columns: 300px 300px;
-        img{
-            width: 100%;
+        grid-template-columns: 412px 400px;
 
-        }
+    }
         
-        gap: 30px;
-    } 
+        .container {
+            width: 200px;
+        
+        
+    }
+        
+        
+        .side-by-side .image-container1 img {
+       width:80px ;
+      
+    }
+        
+        
+        
         
     
-    
-    
-
-
 
 
 
@@ -343,12 +378,17 @@ ul{
 }
         
 
-    #wireframing, #hi-fi{
+    #hi-fi{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
         max-width: 100%;
         height: auto;
+        img{
+            width: 230px;
+        }
 }
     
     
