@@ -273,34 +273,42 @@ h4{
    
 }
 }
-
+/* wirframing code */
 
        .single-column {
         min-width: 600px;
         max-width: 1200px;
-        margin:0px auto;}
+        margin:12px;}
         
         .main-section {
-        padding: 48px;
+        padding: 50px;
     }
 
         .side-by-side {
-        display: flex;align-items: center;margin: 48px 0px;}
+        display: flex;
+        align-items: center;
+        margin: 48px 0px;
+    }
         
         
         .side-by-side .image-container {
         display: grid;
         grid-template-columns: 450px 450px;
+        gap: 12px;
         
     }
         
         .side-by-side .text-container {
-        flex: 1;padding: 36px;}
+        flex: 1;
+        padding: 50px;
+    }
         
         
         .side-by-side .image-container img {
         width: 100%;
+        
     }
+    /* wireframing ends */
     
 
     .single {
@@ -310,8 +318,8 @@ h4{
         img{
             width: 380px;
         }
-    
- 
+
+
     }
         
         #main .container{
@@ -346,13 +354,51 @@ h4{
       
     }
         
+
+    /* this line starts the brand colors code
+     */
+     .single-column3 {
+        min-width: 600px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+        
+        .main-section3 {
+        padding: 50px;
+    }
+
+        .side-by-side3 {
+        display: flex;
+        align-items: center;
+        margin: 48px 0px;
+    }
         
         
-        
+        .side-by-side3 .image-container3 {
+        display: grid;
+        grid-template-columns: 200px 200px ;
+        gap: 12px;
+        padding: 50px;
     
+        
+    }
+        
+        .side-by-side3 .text-container3 {
+        flex: 1;
+        padding: 12px;
 
+        
+    }
 
+        .side-by-side3 .image-container3 img {
+        width: 100%;
+       
+    
+        
+    }
+    /* * this line  the brand colors code */
 
+    
 
 .appdemo{
     display: grid;
