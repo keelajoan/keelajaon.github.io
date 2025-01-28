@@ -202,12 +202,18 @@ hr{
     margin: 30px;
     color: black;
 }
-h2,h3{
-    font-size: 50px;
+h3{
+    font-size: 40px;
     font-family: "Nunito Sans", serif;
     font-weight: 700;
     font-style: normal;
 
+}
+h2{
+    font-size: 20px;
+    font-family: "Nunito Sans", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 h4{
     font-size: 30px;
@@ -274,42 +280,23 @@ h4{
 }
 }
 /* wirframing code */
-
-       .single-column {
-        min-width: 600px;
-        max-width: 1200px;
-        margin:12px;}
-        
-        .main-section {
-        padding: 50px;
-    }
-
-        .side-by-side {
-        display: flex;
-        align-items: center;
-        margin: 48px 0px;
-    }
-        
-        
-        .side-by-side .image-container {
-        display: grid;
-        grid-template-columns: 450px 450px;
-        gap: 12px;
-        
-    }
-        
-        .side-by-side .text-container {
-        flex: 1;
-        padding: 50px;
-    }
-        
-        
-        .side-by-side .image-container img {
-        width: 100%;
-        
-    }
-    /* wireframing ends */
+#wireframes{
+    display:flex ;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+    padding: 20px;
     
+    img{
+        width: 500px;
+        height: auto;
+        
+    }
+}
+
+       
 
     .single {
         display: flex;
@@ -400,6 +387,8 @@ h4{
     .single-column4 {  
         margin: 0 auto;
         
+        
+        
     }
         
         .main-section4 {
@@ -410,7 +399,9 @@ h4{
         .side-by-side4 {
         display: flex;
         align-items: center;
-        width: 400px;
+        margin: 48px 0px;
+        
+       
     }
         
         
@@ -419,7 +410,8 @@ h4{
         padding: 50px;
         video{
             width: 400px;
-            height: auto;
+            height: 700px;
+            
     
         }
        
@@ -428,8 +420,9 @@ h4{
     }
         
         .side-by-side3 .text-container4 {
-        flex: 1;
-        padding: 12px;
+        /* flex: 1; */
+        
+        
         
 
         
