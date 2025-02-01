@@ -532,12 +532,15 @@ ul{
 }
 .basic-grid-gallery {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 600px;
+    gap: 30px;
+    background-color: purple;
+    
 }
 
 .basic-grid-gallery img {
     width: 100%;
-    gap: 12px;
+   
 }
 #brandcolors{
     align-items: center;
