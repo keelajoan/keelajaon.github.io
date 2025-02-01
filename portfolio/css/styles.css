@@ -516,9 +516,13 @@ ul{
     }
     
 #layout {
-    max-width: 800px;
+    width: 900px;
     margin: 48px auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
     h2{
         font-family:"Roboto", sans-serif ;
         font-size: 70px;
@@ -531,12 +535,13 @@ ul{
     
 }
 .basic-grid-gallery {
+    /* background-image: linear-gradient(to right, red , blue); */
     display: grid;
-    grid-template-columns: 600px;
-    gap: 30px;
-    background-color: purple;
+    grid-template-columns: 900px;
+    
     
 }
+
 
 .basic-grid-gallery img {
     width: 100%;
