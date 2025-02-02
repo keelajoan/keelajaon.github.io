@@ -435,6 +435,52 @@ h4{
     
         
     }
+    /* icons code */
+    .single-column5 {  
+        margin: 0px auto;
+        gap: 12px;
+        margin: 20px;
+        
+        
+    }
+        
+        #icons {
+        padding: 20px;
+        margin: 20px;
+
+    }
+
+        .side-by-side5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+       
+    }
+        
+        
+        .text-container5 {
+        background-color: yellow;
+        padding: 20px;
+        margin: 12px;
+        
+        
+        
+    }
+
+     .image-container5 img {
+    
+        background-color: yellow;
+        max-width: 500px;
+        margin: 9px auto;
+        text-align: center;
+        padding: 9px;
+
+        }
+        
+       
+
 
     
 
