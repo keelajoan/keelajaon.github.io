@@ -461,7 +461,7 @@ h4{
         
         
         .text-container5 {
-        background-color: yellow;
+        /* background-color: yellow; */
         padding: 20px;
         margin: 12px;
         
@@ -471,7 +471,7 @@ h4{
 
      .image-container5 img {
     
-        background-color: yellow;
+        /* background-color: yellow; */
         max-width: 500px;
         margin: 9px auto;
         text-align: center;
