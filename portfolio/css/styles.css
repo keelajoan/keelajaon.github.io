@@ -64,8 +64,10 @@ nav #logo img {
     padding: 10px;
 }
 
-nav #logo a:hover{
-    background: transparent;
+nav a#logo:hover {
+    background-color: transparent;  
+    box-shadow: none;              
+   
 }
  
 
@@ -221,7 +223,6 @@ nav #logo a:hover{
     
 }
 .card1:hover{
-    background-color:#ff89c4;
     box-shadow: 4px 6px 6px #0003;
     transform: translateY(-4px);
 }
