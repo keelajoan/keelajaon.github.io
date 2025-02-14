@@ -18,7 +18,8 @@ body {
 /* header */
 nav{
     padding: 20px;
-    background-color: white;
+    background-color: #F5F5F5;
+   
     
 }
 nav ul{
@@ -45,10 +46,9 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #ff89c4;
+    color:  #FF69B4;
     border-radius: 3px;
     padding: 32px;
-    box-shadow: 4px 6px 6px #0003;
     transition:
         background-color 0.5s,
         box-shadow 0.7s,
@@ -108,21 +108,26 @@ nav a#logo:hover {
     #maintitle {
             margin:auto ;
             align-items: center;
-            width: 1400px;
+            width: 1420px;
             padding: 20px;
             justify-content: center;
-            /* background-color:  #ffadd7; */
-            h1{
-            font-size: 90px;
-            font-family: "Roboto", sans-serif;
-            color: #3C3744;
-            font-weight: 300;
+            background-color:  #000000;
+            b{
+                color: #FF69B4 ;
 
+            }
+
+            h1{
+            font-size: 75px;
+            font-family: "Roboto", sans-serif;
+            color: #FFFFFF;
+            font-weight: 300;
+            
         }
         p{
             font-family:"Nunito Sans", serif ;
             font-size: 65px;
-            color: #3C3744;
+            color: #FFFFFF;
         }
 
             
@@ -141,13 +146,12 @@ nav a#logo:hover {
 /* THIS LINE STARTS THE CARD CODE */
 
 #projects {
+    color: #FF69B4;
     text-align: center;
     align-items: center;
     font-size: 60px;
     font-family:Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: 400;
-    background-color: black;
+    font-weight: 500;
     padding: 40px;
     margin: 30px;
 }
@@ -180,7 +184,7 @@ nav a#logo:hover {
   
 
 .card{
-    border: 4px solid #ff89c4;
+    border: 4px solid  #FF69B4;
     margin: 12px;
     padding: 10px;
     box-shadow: 5px 10px;
@@ -202,14 +206,10 @@ nav a#logo:hover {
         margin-bottom: 0px;
         text-decoration: none;
         color: black;
-        /* background-color: black; */
-        padding: 15px;
-        border-radius: 8px;
         font-size: 25px;
         font-family: "Nunito Sans", serif;
         &:hover{
-            background-color: white;
-            color: black;
+            color: #FF69B4;
             
         }
         
@@ -237,6 +237,7 @@ h3{
     font-family: "Nunito Sans", serif;
     font-weight: 700;
     font-style: normal;
+    color: #FF69B4;
 
 }
 h2{
@@ -262,24 +263,44 @@ h4{
 
 /* THIS LINE STARTS THE  APP CODE*/
 
-#main-content{
+#section-container {
+    background:linear-gradient(135deg, #981efa, #4aaad0);/* Apply the background color to this section */
+    width: 100%;  /* Make sure it stretches the entire width */
+    padding: 0;
+    h1{
+        font-size: 48px;
+        color:#efefef;
+        font-weight: bold;
+        font-family:"Roboto", sans-serif ;
+        line-height: 1.3;
+        margin-bottom: 20px; /* Space below the heading */
+    }
+    p{
+        font-size: 30px;
+    }
+}
+
+
+#main-content {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1200px; /* Keeps the content centered and inside this width */
     align-items: center;
     justify-content: center;
-    #mockup1{
-        max-width: 600px;
-        img{
-            width: 1200px;
-        }
-    }
-
-    
-    
-    #maininfo {
+    padding: 32.80px;
+    p{
         font-size: 26px;
-
     }
+}
+
+/* Mockup image styling */
+#mockup1 {
+    max-width: 600px;
+}
+
+#mockup1 img {
+    width: 1200px; /* Or any other width you want the image to be */
+}
+   #maininfo {
     p{
         font-size: 26px;
         font-family: "Nunito Sans", serif;
@@ -292,9 +313,10 @@ h4{
         
 
     b{
-        font-size: 26px;
+        font-size: 30px;
         text-wrap: wrap;
         font-family:"Nunito Sans", serif ;
+        
     }
     
 
@@ -308,72 +330,93 @@ h4{
     
    
 }
+   }
+
+/*side by side code 1 */
+#main {
+    padding: 30px;
+    background-color: #f4f4f4;  /* Light gray background */
+    p {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    
 }
-/* wirframing code */
-#wireframes{
-    display:flex ;
-    max-width: 400px;
+
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 50px;
-    padding: 20px;
-    
-    img{
-        width: 500px;
-        height: auto;
-        
-    }
 }
 
-       
-
-    .single {
-        display: flex;
-        margin:auto;
-        align-items: center;
-        img{
-            width: 380px;
-        }
+.container {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
 
 
-    }
-        
-        #main .container{
-        padding: 30px;
-        width: 1000px;
 
-    }
 
-        .sideside {
-        align-items: center;
-        margin: 48px 0px;
-        max-width: 1000px;
-        
-    }
-        
-        
-        .sideside .image-container1 {
-        display: grid;
-        grid-template-columns: 412px 400px;
+ul {
+    font-size: 18px;
+    padding-left: 20px;
+}
 
-    }
-        
-        .container {
-            width: 200px;
-        
-        
-    }
-        
-        
-        .side-by-side .image-container1 img {
-       width:80px ;
-      
-    }
-        
+li {
+    margin-bottom: 10px;
+}
 
-    /* this line starts the brand colors code
-     */
+.sideside {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+    gap: 20px;  /* Adds space between images */
+}
+
+.image-container img {
+    width: 48%;  /* Makes the images take up 48% of the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* DESIGN PROCESS CODE  */
+
+.design-process-container {
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px; /* Adds space around the content */
+    background-color: white; /* Optionally, set a background color */
+}
+
+h3 {
+    font-size: 32px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+p {
+    font-size: 26px; /* Standard font size for paragraphs */
+    font-family:"Nunito Sans", serif ;
+    margin-bottom: 28px; /* Adds space between paragraphs */
+}
+/* DESIGN PROCESS CODE END   */
+
+
      .single-column3 {
         min-width: 600px;
         max-width: 1200px;
