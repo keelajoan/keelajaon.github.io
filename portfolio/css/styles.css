@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #f4f4f4;
     
     
 
@@ -147,20 +148,17 @@ nav a#logo:hover {
 
 #projects {
     text-align: center;
-    color: #efefef;
-    background-color: #000000;
+    color:#f4f4f4;
+    /* background-color: #000000; */
     align-items: center;
+    background-color:#FF69B4;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    padding: 50px 40px;
-    margin: 50px;
-    border-radius: 15px; /* Rounded corners for a softer look */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds depth to the section */
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+    padding: 20px 30px;
+    margin: 56px;
+     border-radius: 15px;
+    
 }
 
 
@@ -265,6 +263,9 @@ nav a#logo:hover {
     align-items: center;
     justify-content: center;
     padding: 32.80px;
+    h3{
+        font-family:"Roboto", sans-serif ;
+    }
     p{
         font-size: 26px;
     }
