@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     
     
 
@@ -240,7 +240,7 @@ nav a#logo:hover {
 /* THIS LINE STARTS THE  APP CODE*/
 
 #section-container {
-    background:linear-gradient(135deg, #981efa, #4aaad0);/* Apply the background color to this section */
+    background:linear-gradient(135deg, #7B205F, #42AAD1);/* Apply the background color to this section */
     width: 100%;  /* Make sure it stretches the entire width */
     padding: 0;
     h1{
@@ -314,7 +314,7 @@ nav a#logo:hover {
 /*side by side code 1 */
 #main {
     padding: 30px;
-    background-color: #f4f4f4;  /* Light gray background */
+    
     p {
         font-size: 28px;
         margin-bottom: 20px;
@@ -324,6 +324,7 @@ nav a#logo:hover {
         font-size: 30px;
         font-weight: 600;
         margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
     }
     
     
@@ -348,8 +349,6 @@ nav a#logo:hover {
 }
 
 
-
-
 ul {
     font-size: 18px;
     padding-left: 20px;
@@ -367,15 +366,159 @@ li {
     gap: 20px;  /* Adds space between images */
 }
 
+.main2{
+    padding: 30px;
+    p {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+.sideside {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+}
+
+
 .image-container img {
     width: 48%;  /* Makes the images take up 48% of the space */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
+
+/* main colors code */
+.main2 {
+    padding: 30px;
+    
+    p {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container2{
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+
+.sideside2 {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+    gap: 20px;  /* Adds space between images */
+}
+
+.main2{
+    padding: 30px;
+    p {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container2 {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+.sideside2 {
+    flex: 1 1 38%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+}
+.image-container2{
+    width:200px;
+}
+
+
+.image-container2 img {
+    width: 48%;  /* Makes the images take up 48% of the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+/* main colors code */
+
 /* DESIGN PROCESS CODE  */
 
 .design-process-container {
-    max-width: 1200px;
+    max-width:1200px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -386,6 +529,7 @@ li {
 h3 {
     font-size: 32px; /* Larger font size for the heading */
     margin-bottom: 15px; /* Adds space below the heading */
+    font-family: "Roboto", sans-serif ;
 }
 
 p {
@@ -396,194 +540,220 @@ p {
 /* DESIGN PROCESS CODE END   */
 
 
-     .single-column3 {
-        min-width: 600px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-        
-        .main-section3 {
-        padding: 50px;
-    }
-
-        .side-by-side3 {
-        display: flex;
-        align-items: center;
-        margin: 48px 0px;
-    }
-        
-        
-        .side-by-side3 .image-container3 {
-        display: grid;
-        grid-template-columns: 200px 200px ;
-        gap: 12px;
-        padding: 50px;
-    
-        
-    }
-        
-        .side-by-side3 .text-container3 {
-        flex: 1;
-        padding: 12px;
-
-        
-    }
-
-        .side-by-side3 .image-container3 img {
-        width: 100%;
-       
-    
-        
-    }
-    /* * this line  the brand colors code */
-    .single-column4 {  
-        margin: 0 auto;
-        
-        
-        
-    }
-        
-        .main-section4 {
-        padding: 50px;
-
-    }
-
-        .side-by-side4 {
-        display: flex;
-        align-items: center;
-        margin: 48px 0px;
-        
-       
-    }
-        
-        
-        .side-by-side4 .image-container4{
-        display: flex;
-        padding: 50px;
-        video{
-            width: 400px;
-            height: 700px;
-            
-    
-        }
-       
-    
-        
-    }
-        
-        .side-by-side3 .text-container4 {
-        /* flex: 1; */
-        
-        
-        
-
-        
-    }
-
-        .side-by-side3 .image-container3 img {
-        width: 100%;
-        
-       
-    
-        
-    }
-    /* icons code */
-    .single-column5 {  
-        margin: 0px auto;
-        gap: 12px;
-        margin: 20px;
-        
-        
-    }
-        
-        #icons {
-        padding: 20px;
-        margin: 20px;
-
-    }
-
-        .side-by-side5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        
-       
-    }
-        
-        
-        .text-container5 {
-        /* background-color: yellow; */
-        padding: 20px;
-        margin: 12px;
-        
-        
-        
-    }
-
-     .image-container5 img {
-    
-        /* background-color: yellow; */
-        max-width: 500px;
-        margin: 9px auto;
-        text-align: center;
-        padding: 9px;
-
-        }
-        
-       
-
-
-    
-
-.appdemo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    max-width: 100%;
-    height: auto;
-
-}
-
-iframe {
-    max-width: 100%;
-    align-items: center;
-    justify-items:center ;
-    text-align: center;
-
-} 
-
-
-ul{
-    font-size: 26px;
-    font-family: "Nunito Sans", serif;
-}
-#brandcolors{
-    align-items:center ;
-    justify-content: center;
+     
+.mockups2 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    /* max-width: 1200px; */
     margin: auto;
+    background-color: #42AAD1;
     width: 100%;
-    text-align: center;
- img{
-    align-items: center;
+    padding: 20px;
+
+    
+    
+  }
+
+  #contents {
+    padding: 10px; /* Optional: adds some padding around the content */
+    width: 1200px;
+    
+  }
+
+
+  #contents img {
+    max-width: 100%; /* Ensures the images are responsive */
+    margin: 10px; /* Adds space between images */
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .mockups3 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    max-width: 1200px;
+    margin: auto;
+    
+  }
+  
+
+  #contents2 {
+    padding: 10px; /* Optional: adds some padding around the content */
+  }
+
+
+  #contents2 img {
+    max-width: 100%; /* Ensures the images are responsive */
+    margin: 10px; /* Adds space between images */
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  /* ICONS CODE */
+  #icons {
+    display: flex;
     justify-content: center;
-    width: 400px;
-}
-}
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .single-column5 {
+    width: 100%;
+    max-width: 1200px; /* Ensures it doesn't stretch too much */
+  }
+  
+  .side-by-side5 {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+    gap: 30px;
+  }
+  
+  /* Image container styling */
+  .image-container5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: auto;
+    gap: 20px;
+    max-width: 800px; /* Adjust the size of the icons container */
+  }
+  
+  .image-container5 img {
+    width: 40px;
+    max-width: 80px; /* Ensures icons don't stretch too large */
+    height: auto;
+    gap: 20px;
+  }
+  
+  
+  
+  /* Text container styling */
+  .text-container5 {
+    flex-basis: 75%;
+    max-width: 1200px;
+    padding: 10px;
+
+  }
+  
+  .text-container5 h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .text-container5 p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between; /* Aligns text and images side by side */
+    align-items: center;
+    gap: 30px; /* Adds space between the text and images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  #searchbars-img {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 20px ;
+    padding: 20px;
+    margin: auto;
+    gap: 5px; /* Adds space between the icons */
+    flex-wrap: wrap; /* Allows the images to wrap on smaller screens */
+  }
+  
+  #searchbars-img img {
+    max-width: 300px; /* Controls the icon size */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
+  .text-containe {
+    width:1200px; /* Adjusts the text container width */
+    padding: 20px;
+    
+  }
+  
+  .text-containe h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    h3{
+        font-family: "Roboto", sans-serif;
+    }
+  }
+  
+  .text-containe p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+/* VIDEO CODE  */
+
+  .media-text-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; /* Spreads out the media and text */
+    gap: 50px; /* Adds space between the media and text */
+    max-width: 1200px; /* Max width for the layout */
+    margin: auto; /* Centers the layout */
+    padding: 60px;
+    h3{
+        font-family:"Roboto", sans-serif ;
+    }
+    
+  }
+  
+  /* Style for the media (image or video) */
+  .media video {
+    max-width: 800px; /* Ensures image is responsive */
+    width: 60%; /* Adjust this value to control size */
+    border-radius: 8px;
+    margin: auto;
+    height: 480px;
+    
+  }
+  
+  /* Style for the text section */
+  .text {
+    width: 1200px; /* Adjust the width of the text block */
+    height: 490px;
+  }
+  .media{
+    width: 500px;
+
+  }
+  
+  .text h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .text p {
+    font-size: 28px;
+    font-family:"Nunito Sans", serif ;
+  }
+  
+  
+  
+  
+  /* ICONS CODE */
+
 
         
 
-    .mockups2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        img{
-            width: 200px;
-        }
-}
+
     
  
 
