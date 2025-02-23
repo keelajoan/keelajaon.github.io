@@ -273,11 +273,13 @@ nav a#logo:hover {
 
 /* Mockup image styling */
 #mockup1 {
-    max-width: 600px;
+    max-width: 1025px;
+    justify-content: center;
+    align-items: center;
 }
 
 #mockup1 img {
-    width: 1200px; /* Or any other width you want the image to be */
+    width: 1025px; /* Or any other width you want the image to be */
 }
    #maininfo {
     p{
@@ -704,10 +706,11 @@ p {
     display: flex; /* Enables flexbox layout */
     align-items: center; /* Vertically aligns the items */
     justify-content: space-between; /* Spreads out the media and text */
-    gap: 50px; /* Adds space between the media and text */
-    max-width: 1480px; /* Max width for the layout */
+    gap: 20px; /* Adds space between the media and text */
+    max-width: 1200px; /* Max width for the layout */
+    width: 1125px;
     margin: auto; /* Centers the layout */
-    padding: 60px;
+    padding: 20px;
     h3{
         font-family:"Roboto", sans-serif ;
     }
@@ -716,25 +719,29 @@ p {
   
   /* Style for the media (image or video) */
   .media video {
-    max-width: 500px; /* Ensures image is responsive */
-    width: 5500px; /* Adjust this value to control size */
+    max-width: 800px; /* Ensures image is responsive */
+    width: 80%; /* Adjust this value to control size */
+    height: auto;
     margin: auto;
-    height: 800px;
     
   }
   
   /* Style for the text section */
   .text {
     max-width:1200px; /* Adjust the width of the text block */
-    height: 800px;
+    width: 1000px;
+    height: auto;
+
+
   }
   .media{
-    width: 1300px;
+    width: 600px;
+
 
   }
   
   .text h2 {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-size: 2rem;
   }
   
@@ -835,7 +842,7 @@ p {
  
 
 /* NAV BAR RESPOSVISNESS */
-@media screen and (max-width: 800px){ 
+@media screen and (max-width: 400px){ 
     .hideOnMobile{
         display: none;
 
@@ -844,8 +851,6 @@ p {
         display: block;
     }
    
-}
-@media screen and (max-width: 400px){ 
     .sidebar{
         width: 100%;
     }
@@ -855,352 +860,344 @@ p {
 /* PHONE RESPONSINESS */
 
 
-@media screen and (max-width: 800px){
+/* NAV BAR RESPONSIVENESS */
+@media screen and (max-width: 480px) {
+    /* XS screens */
+    .menu-button {
+        display: block;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
     #maintitle {
         flex-direction: column;
         max-width: 390px;
-        padding: 20px;
-       
-        h1{
-        font-size: 40px;
-      
+        padding: 15px;
     }
-    p{
-        
-        font-size: 35px;
-        
+    #maintitle h1 {
+        font-size: 28px;
     }
-
-        
-        
-     }
-     #intro{
-        width: 360px;  
-
-     }
-
-    
-#projects {
-font-size: 40px;
-
-}
-#mockup1 {
-    width: 390px;
-    justify-content: center;
-    align-items: center;
-}
-
-#mockup1 img {
-    width: 360px; /* Or any other width you want the image to be */
-}
-
-#section-container {
-    background:white;
-    padding:2px;
-    h1{
+    #maintitle p {
         font-size: 24px;
-        color: black;
+    }
+
+    #intro {
+        width: 100%;
+    }
+
+    #projects {
+        font-size: 32px;
+    }
+
+    #mockup1 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mockup1 img {
+        width: 100%;
+    }
+
+    .sideside {
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .text-container5 p,
+    .text-containe p,
+    .media video {
+        font-size: 16px;
+    }
+    .media-text-container {
+       flex-direction: column;
+        max-width: 400px; /* Max width for the layout */
+        width: 1125px;
+        margin: auto; /* Centers the layout */
+        padding: 20px;
+        h3{
+            font-family:"Roboto", sans-serif ;
+        }
+        
+      }
+      
+      /* Style for the media (image or video) */
+      .media video {
+        max-width: 390px; /* Ensures image is responsive */
+        width: 250px; /* Adjust this value to control size */
+        height: auto;
+        margin: auto;
+        
+      }
+      
+      /* Style for the text section */
+      .text {
+        max-width:300px; /* Adjust the width of the text block */
+        width: 1000px;
+        height: auto;
     
+    
+      }
+      .media{
+        width: 300px;
+      }
     }
-    p{
-        font-size: 18px;
-    }
-    h3{
-        font-size: 20px;
-    }
-}
-}
-#maininfo {
-    p{
-        font-size: 18px;
+    #layout {
+        width: 300px;
+        margin: 48px auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        gap: 30px;
+       
+        h2{
+            font-family:"Roboto", sans-serif ;
+            font-size: 30px;
+            color: #3C3744;
+        }
+        p{
+            font-family:"Nunito Sans", serif ;
+            font-size: 26px;
+        }
         
     }
-
-
-    b{
-        font-size: 20px;
+    .basic-grid-gallery {
+        /* background-image: linear-gradient(to right, red , blue); */
+        display: grid;
+        grid-template-columns: 10px;
+        
         
     }
-    margin-bottom: 0px;
-   
-   
-}
-   
-
-#main {
-    padding: 2px;
-   
-    p {
-        font-size: 18px;
     
-    }
-    h3 {
-        font-size: 20px;
-    }
-    width: 390px;
-}
-
-.single {
-
-    max-width: 400px;
     
-}
-
-.container {
-    
-    padding: 20px;
-    max-width: 390px;
-    
-}
-
-li {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.sideside{
-
-    justify-content:center;  /* Aligns items horizontally */
-}
-
-.image-container{
-    width: 300px;
-    
-}
-.design-process-container {
-    max-width:390px;
-    align-items: center;
-    p{
-        font-size: 18px;
-    }
-    h3{
-        font-size: 20px;
-    }
-}
-.mockups2 {
-    background-color: white;
-    width: 390px; 
-    p{
-        font-size: 18px;
-  }
-
-    
-  }
-
-  #contents {
-    padding: 10px; /* Optional: adds some padding around the content */
-    max-width: 390px;
-   
-}
-
-
-  #contents img {
-    max-width: 390px; /* Ensures the images are responsive */
-    width: 120px;
-    justify-content: center;
-    margin: 20px;
-  }
-  #contents2{
-    p{
-        font-size: 18px;
-  }
-
-
-  }
-  .mockups3 {
-    max-width: 390px;
-    margin: auto;
-    padding: 10px;
-    
-  }
-  #contents2 img {
-    max-width: 390px; /* Ensures the images are responsive */
-    width: 120px;
-    justify-content: center;
-    margin: 25px;
-
-
-  }
-  .main2 {
-    padding: 30px;
-    max-width: 390px;
-    
-    p {
-        font-size: 18px;
-        
-    }
-    h3 {
-        font-size: 20px;
+    .basic-grid-gallery img {
+        width: 300px;
        
     }
     
     
-}
-
-.single2 {
-    flex-direction: column;
-    margin-top: 10px;
-   
-
-}
-
-.container2{
-    padding: 50px;
     
-}
+    
 
+    
 
-
-.sideside2 {
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
-    justify-content:center;  /* Aligns items horizontally */
-}
-
-.main2{
-    padding: 10px;
-    p {
-        font-size: 18px;
-       
+/* SMALL SCREENS */
+@media screen and (max-width: 768px) {
+    /* SM screens */
+    #maintitle {
+        flex-direction: column;
+        max-width: 480px;
+        padding: 20px;
     }
-    h3 {
-        font-size: 20px;
+
+    #maintitle h1 {
+        font-size: 36px;
+    }
+    #maintitle p {
+        font-size: 30px;
+    }
+
+    #intro {
+        width: 80%;
+    }
+
+    #projects {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 480px;
+    }
+
+    .mockups2 {
+        width: 100%;
+        background-color: white;
+    }
+
+    #contents {
+        max-width: 480px;
+    }
+
+    #contents img {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .main2 h3,
+    .text-container5 h3 {
+        font-size: 18px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #searchbars-img {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* MEDIUM SCREENS */
+@media screen and(max-width: 1200px) {
+    /* MD screens */
+    #maintitle {
+        flex-direction: row;
+        max-width: 700px;
+        padding: 30px;
+    }
+
+    #maintitle h1 {
+        font-size: 42px;
+    }
+
+    #maintitle p {
+        font-size: 35px;
+    }
+
+    #intro {
+        width: 70%;
+    }
+
+    #projects {
+        font-size: 40px;
+    }
+
+    #mockup1 {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mockup1 img {
+        width: 100%;
+    }
+
+    .container {
+        padding: 30px;
+        max-width: 700px;
+    }
+
+    #contents img {
+        max-width: 390px;
+        margin: 20px;
+    }
+
+    .main2 {
+        padding: 40px;
+        max-width: 700px;
+    }
+
+    .searchbar {
+        padding: 30px;
+    }
+
+    #searchbars-img {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* LARGE SCREENS */
+@media screen and (max-width: 1025px) {
+    /* LG screens */
+    #maintitle {
+        flex-direction: row;
+        max-width: 1000px;
+        padding: 50px;
+    }
+
+    #maintitle h1 {
+        font-size: 50px;
+    }
+
+    #maintitle p {
+        font-size: 40px;
+    }
+
+    #intro {
+        width: 60%;
+    }
+
+    #projects {
+        font-size: 50px;
+    }
+
+    #mockup1 {
+        max-width: 100%;
         
     }
-    
-    
-}
 
-.single2 {
-    flex-direction: column;
-    max-width: 390px;
-    margin: auto;
-}
-
-.container2 {
-    flex: 1 1 60%;  /* Takes up 60% of the space */
-    padding: 10px;
-    
-}
-
-
-.sideside{
-    flex-direction: column;
-    margin: 10px;
-}
-.image-container2{
-    width:200px;
-}
-
-  .image-container5 img {
-    width: 30px;
-    max-width: 100px; /* Ensures icons don't stretch too large */
-  }
-  .text-container5 {
-    max-width: 390px;
-    padding: 6px;
-    p{
-        font-size: 18px;
-
-  }
-  h3{
-    font-size: 20px;
-  }
-}
-.side-by-side5 {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .searchbar{
-    flex-direction: column;
-    padding: 10px;
-    background-color: #f4f4f4;
-  }
-  
-  #searchbars-img {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 300px;
-    gap: 20px;
-    max-width: 390px; /* Adjust the size of the icons container */
-  }
-  
-  #searchbars-img img {
-    width: 300px; /* Controls the icon size */
-   
-  }
-  
-  
-  .text-containe {
-    max-width:390px; /* Adjusts the text container width */
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .text-containe h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    h3{
-        font-family: "Roboto", sans-serif;
+    #mockup1 img {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
-  }
-  
-  .text-containe p {
-    font-size: 18px;
-  }
-  .media-text-container {
-    flex-direction: column;
-    max-width: 390px; /* Max width for the layout */
-    padding: 5px;
-    h3{
-        font-family:"Roboto", sans-serif ;
-        font-size: 20px;
-    }
-   
-    
-  }
-  
-  /* Style for the media (image or video) */
-  .media video {
-    max-width: 200px; /* Ensures image is responsive */
-    width: 100px; /* Adjust this value to control size */
-    height: 300px;
-    
-  }
-  
-  /* Style for the text section */
-  .text {
-    max-width:390px; /* Adjust the width of the text block */
-    height: 100px;
-    margin: 10px;
 
-  }
-  .media{
-    width: 300px;
-    justify-content: center;
+    .container {
+        padding: 40px;
+        max-width: 1000px;
+    }
+
+    #contents img {
+        max-width: 100%;
+        margin: 25px;
+    }
+
+    .main2 {
+        padding: 50px;
+        max-width: 1000px;
+    }
+
+    .searchbar {
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    #searchbars-img {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+#layout {
+    width: 800px;
+    margin: 48px auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+   
+    h2{
+        font-family:"Roboto", sans-serif ;
+        font-size: 30px;
+        color: #3C3744;
+    }
+    p{
+        font-family:"Nunito Sans", serif ;
+        font-size: 26px;
+    }
+    
+}
+.basic-grid-gallery {
+    /* background-image: linear-gradient(to right, red , blue); */
+    display: grid;
+    grid-template-columns: 700px;
+    
+    
+}
 
-  }
-  
-  .text h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
-  
-  .text p {
-    font-size: 18px;
-    font-family:"Nunito Sans", serif ;
-  }
-  
 
-  
-  
-
-
-
-
-
-  
-
-  
+.basic-grid-gallery img {
+    width: 100%;
+   
+}
 
