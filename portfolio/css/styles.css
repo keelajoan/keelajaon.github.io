@@ -109,7 +109,7 @@ nav a#logo:hover {
     #maintitle {
             margin:auto ;
             align-items: center;
-            width: 1460px;
+            width: 100%;
             padding: 20px;
             justify-content: center;
             background-color:#f4f4f4;
@@ -240,20 +240,25 @@ nav a#logo:hover {
 /* THIS LINE STARTS THE  APP CODE*/
 
 #section-container {
-    background:linear-gradient(135deg, #7B205F, #42AAD1);/* Apply the background color to this section */
     width: 100%;  /* Make sure it stretches the entire width */
     padding: 0;
     h1{
         font-size: 48px;
-        color:#efefef;
         font-weight: bold;
         font-family:"Roboto", sans-serif ;
         line-height: 1.3;
         margin-bottom: 20px; /* Space below the heading */
     }
-    p{
-        font-size: 30px;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
     }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
 }
 
 
@@ -399,7 +404,7 @@ li {
 
 .container {
     flex: 1 1 60%;  /* Takes up 60% of the space */
-    padding: 50px;
+    padding: 20px;
     
 }
 
@@ -528,19 +533,21 @@ li {
     margin: auto;
     padding: 20px; /* Adds space around the content */
     background-color: white; /* Optionally, set a background color */
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
 }
 
-h3 {
-    font-size: 32px; /* Larger font size for the heading */
-    margin-bottom: 15px; /* Adds space below the heading */
-    font-family: "Roboto", sans-serif ;
-}
 
-p {
-    font-size: 26px; /* Standard font size for paragraphs */
-    font-family:"Nunito Sans", serif ;
-    margin-bottom: 28px; /* Adds space between paragraphs */
-}
+
+
 /* DESIGN PROCESS CODE END   */
 
 
@@ -549,19 +556,23 @@ p {
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: auto;
-    background-color: #42AAD1;
-    width: 100%;
-    padding: 20px;
-
-    
+    padding: 20px; 
     
   }
 
   #contents {
     padding: 10px; /* Optional: adds some padding around the content */
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+   
+   
     
   }
 
@@ -569,7 +580,7 @@ p {
   #contents img {
     max-width: 100%; /* Ensures the images are responsive */
     margin: 10px; /* Adds space between images */
-    width: 250px;
+    width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -587,6 +598,11 @@ p {
 
   #contents2 {
     padding: 10px; /* Optional: adds some padding around the content */
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
   }
 
 
@@ -604,11 +620,23 @@ p {
     justify-content: center;
     align-items: center;
     padding: 40px;
+   
   }
   
   .single-column5 {
     width: 100%;
-    max-width: 1200px; /* Ensures it doesn't stretch too much */
+    max-width: 1200px;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
+     /* Ensures it doesn't stretch too much */
   }
   
   .side-by-side5 {
@@ -659,22 +687,30 @@ p {
   .searchbar{
     display: flex;
     justify-content: center;
-    gap: 30px; /* Adds space between the text and images */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%;
     padding: 40px;
     background-color: #f4f4f4;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
   }
   
   #searchbars-img {
     display: grid;
     margin: auto;
-    grid-template-columns: 400px;
-    gap: 20px;
-    max-width: 800px; /* Adjust the size of the icons container */
+    width: 20px; /* Adjust the size of the icons container */
   }
   
   #searchbars-img img {
-    width: 400px; /* Controls the icon size */
+    width: 350px; /* Controls the icon size */
     height: auto;
     object-fit: contain;
    
@@ -683,7 +719,9 @@ p {
   
   .text-containe {
     max-width:1200px; /* Adjusts the text container width */
-    padding: 10px;
+    width: 1000px;
+   height: auto;
+   margin: auto;
   }
   
   .text-containe h3 {
@@ -706,37 +744,42 @@ p {
     display: flex; /* Enables flexbox layout */
     align-items: center; /* Vertically aligns the items */
     justify-content: space-between; /* Spreads out the media and text */
-    gap: 20px; /* Adds space between the media and text */
-    max-width: 1200px; /* Max width for the layout */
-    width: 1125px;
-    margin: auto; /* Centers the layout */
+    width:90%; /* Max width for the layout */
     padding: 20px;
+    margin: auto;
     h3{
         font-family:"Roboto", sans-serif ;
+        font-size: 30px;
     }
     
   }
   
   /* Style for the media (image or video) */
-  .media video {
-    max-width: 800px; /* Ensures image is responsive */
-    width: 80%; /* Adjust this value to control size */
+  .media {
+    width: 300px; /* Adjust this value to control size */
     height: auto;
     margin: auto;
+    
+    
+  }
+  .media video{
+    width: 350px; /* Adjust this value to control size */
+    height: auto;
+    margin: auto;
+    
     
   }
   
   /* Style for the text section */
   .text {
-    max-width:1200px; /* Adjust the width of the text block */
+   
     width: 1000px;
     height: auto;
 
-
   }
-  .media{
-    width: 600px;
 
+  .video{
+    width: 800px;
 
   }
   
@@ -794,9 +837,9 @@ p {
     justify-content: center;
     gap: 30px;
    
-    h2{
+    h3{
         font-family:"Roboto", sans-serif ;
-        font-size: 70px;
+        font-size: 30px;
         color: #3C3744;
     }
     p{
@@ -854,21 +897,25 @@ p {
     .sidebar{
         width: 100%;
     }
-}
+
+    }
+
 /* NAV BAR RESPOSVISNESS END */ 
 
 /* PHONE RESPONSINESS */
 
 
-/* NAV BAR RESPONSIVENESS */
 @media screen and (max-width: 480px) {
-    /* XS screens */
-    .menu-button {
-        display: block;
-    }
+    nav li {
+        font-size: 13.5px;
+       
 
-    .hideOnMobile {
-        display: none;
+    }
+    nav{
+        gap: 20px;
+    }
+    #logo{
+       width: 110px;
     }
 
     #maintitle {
@@ -877,18 +924,46 @@ p {
         padding: 15px;
     }
     #maintitle h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
     #maintitle p {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     #intro {
         width: 100%;
+       
     }
 
     #projects {
-        font-size: 32px;
+        font-size: 20px;
+    }
+    #section-container{
+        background: #efefef;
+    }
+
+    #main-content p {
+        font-size: 18px;
+    }
+    #main-content h1 {
+        font-size: 25px;
+        color: #0d111a;
+    }
+    #main-content h3 {
+        font-size: 20px;
+    }
+    #main h3 {
+        font-size: 20px;
+    }
+    
+    #main p {
+        font-size: 18px;
+    }
+    li{
+        font-size: 18px;
+    }
+    #maininfo{
+        width: 300px;
     }
 
     #mockup1 {
@@ -899,274 +974,190 @@ p {
 
     #mockup1 img {
         width: 100%;
+       
+    }
+    .design-process-container {
+        width: 350px;
+    
+    }
+    .design-process-container h3 {
+        font-size: 20px;
+        
+
+
+    }
+    .design-process-container p {
+        font-size: 18px;
+
     }
 
     .sideside {
         justify-content: center;
-    }
+        flex-direction: column;
+        width: 390px;
+     }
+    
+      #contents {
+        width: 390px;
+       
+      }
+      #contents p {
+        font-size: 18px;
+      }
+     .mockups2 #contents img {
+        width: 100px;
+        background: #f9ece4;
+      }
+      .mockups2{
+        background: #efefef
+      }
+      #contents2 {
+        width: 330px;
+
+      }
+      #contents2 p {
+        font-size: 18px;
+      }
+     .mockups3 #contents2 img {
+        width: 110px;
+        background: #f9ece4;
+        align-items: center;
+        justify-content: center;
+      }
+      .mockups3{
+        background: #efefef
+      }
+      
+    
 
     .image-container {
         width: 100%;
     }
+    .sideside2{
+       flex-direction: column;
 
-    .text-container5 p,
-    .text-containe p,
-    .media video {
-        font-size: 16px;
     }
+    .container2{
+        width: 390px;
+
+    }
+    .container2 p{
+        font-size: 18px;
+        
+    }
+    .container{
+        max-width: 390px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .side-by-side5 {
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+    }
+    .side-by-side5 p,.text-containe p {
+        font-size: 18px;
+    }
+    .side-by-side5 h3,.text-containe h3 , .text h3{
+        font-size:20px;
+    }
+.text p{
+    font-size: 18px;
+}
+    
+
+    .searchbar {
+        display: grid;
+        max-width: 390px;
+
+
+    }
+
+    
     .media-text-container {
        flex-direction: column;
-        max-width: 400px; /* Max width for the layout */
-        width: 1125px;
-        margin: auto; /* Centers the layout */
-        padding: 20px;
-        h3{
-            font-family:"Roboto", sans-serif ;
-        }
+        max-width: 390px; 
+        align-items: center;
+        justify-content: center;
         
+      }
+      #searchbars-img{
+        max-width: 400px;
+        width: 200px;
+       
+      }
+      .text-containe{
+        max-width: 390px;
+        width: 300px;
+        padding-top: 10px;
+      }
+      #searchbars-img img{
+        max-width: 250px;
       }
       
-      /* Style for the media (image or video) */
-      .media video {
-        max-width: 390px; /* Ensures image is responsive */
-        width: 250px; /* Adjust this value to control size */
-        height: auto;
-        margin: auto;
+      
+      .media{
+        max-width: 200px; 
+        width: 200px;
         
       }
+      video{
+        width: 200px;
+      }
+     .media video{
+        width: 200px;
+      }
+     
       
       /* Style for the text section */
       .text {
-        max-width:300px; /* Adjust the width of the text block */
-        width: 1000px;
-        height: auto;
+        max-width:300px; 
     
     
       }
-      .media{
-        width: 300px;
-      }
-    }
+     
+    
     #layout {
-        width: 200px;
-        margin: 48px auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-        gap: 30px;
+        max-width: 390px;
        
-        h2{
-            font-family:"Roboto", sans-serif ;
-            font-size: 30px;
-            color: #3C3744;
-        }
-        p{
-            font-family:"Nunito Sans", serif ;
-            font-size: 26px;
-        }
+       
+
         
     }
+    #layout p{
+       font-size: 18px;
+
+        
+    }
+    #layout h3{
+        font-size: 20px;
+        
+ 
+         
+     }
     .basic-grid-gallery {
-        /* background-image: linear-gradient(to right, red , blue); */
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: 350px;
+        padding: 12px;
         
         
     }
     
     
     .basic-grid-gallery img {
-        width: 300px;
+        width: 350px;
        
     }
-    
-    
-    
-    
-
-    
-
-/* SMALL SCREENS */
-@media screen and (max-width: 768px) {
-    /* SM screens */
-    #maintitle {
-        flex-direction: column;
-        max-width: 480px;
-        padding: 20px;
-    }
-
-    #maintitle h1 {
-        font-size: 36px;
-    }
-    #maintitle p {
-        font-size: 30px;
-    }
-
-    #intro {
-        width: 80%;
-    }
-
-    #projects {
-        font-size: 36px;
-    }
-
-    .container {
-        padding: 20px;
-        max-width: 480px;
-    }
-
-    .mockups2 {
-        width: 100%;
-        background-color: white;
-    }
-
-    #contents {
-        max-width: 480px;
-    }
-
-    #contents img {
-        width: 100%;
-        margin: 20px;
-    }
-
-    .main2 h3,
-    .text-container5 h3 {
-        font-size: 18px;
-    }
-
-    .searchbar {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    #searchbars-img {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
+   
+#footer a, p{
+    font-size: 12px;
+}
 }
 
-/* MEDIUM SCREENS */
-@media screen and(max-width: 1200px) {
-    /* MD screens */
-    #maintitle {
-        flex-direction: row;
-        max-width: 700px;
-        padding: 30px;
-    }
-
-    #maintitle h1 {
-        font-size: 42px;
-    }
-
-    #maintitle p {
-        font-size: 35px;
-    }
-
-    #intro {
-        width: 70%;
-    }
-
-    #projects {
-        font-size: 40px;
-    }
-
-    #mockup1 {
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #mockup1 img {
-        width: 100%;
-    }
-
-    .container {
-        padding: 30px;
-        max-width: 700px;
-    }
-
-    #contents img {
-        max-width: 390px;
-        margin: 20px;
-    }
-
-    .main2 {
-        padding: 40px;
-        max-width: 700px;
-    }
-
-    .searchbar {
-        padding: 30px;
-    }
-
-    #searchbars-img {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-}
-
-/* LARGE SCREENS */
-@media screen and (max-width: 1025px) {
-    /* LG screens */
-    #maintitle {
-        flex-direction: row;
-        max-width: 1000px;
-        padding: 50px;
-    }
-
-    #maintitle h1 {
-        font-size: 50px;
-    }
-
-    #maintitle p {
-        font-size: 40px;
-    }
-
-    #intro {
-        width: 60%;
-    }
-
-    #projects {
-        font-size: 50px;
-    }
-
-    #mockup1 {
-        max-width: 100%;
-        
-    }
-
-    #mockup1 img {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        padding: 40px;
-        max-width: 1000px;
-    }
-
-    #contents img {
-        max-width: 100%;
-        margin: 25px;
-    }
-
-    .main2 {
-        padding: 50px;
-        max-width: 1000px;
-    }
-
-    .searchbar {
-        padding: 20px;
-        max-width: 500px;
-    }
-
-    #searchbars-img {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
+    
+    
+    
 
     
 
