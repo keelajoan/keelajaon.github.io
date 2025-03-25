@@ -16,97 +16,127 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.contain{
-    width: 90vw;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-}
-
-
-#navbar {
-    background: black;
-    position: sticky;
-
-    .contain{
-        margin-top: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-   
-}
-
-.dropdown-container a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
+nav{
     padding: 20px;
-    font-size: 24px;
-    &:hover{
-        background-color: #931F28;
+    background-color: black;
+   
+    
+}
+nav ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    list-style: none;
+    
+}
+nav a{
+    height: 100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family:"Roboto", sans-serif; ;
+}
 
-    }
+nav a:hover{
+    color: #931F28;
+    border-radius: 3px;
+    padding: 35px;
+    transition:
+        background-color 0.5s,
+        box-shadow 0.7s,
+        transform 0.5s;
+}
+nav li:first-child{
+    margin-right: auto;
 }
 
 
-#navbar #logo a:hover{
-    background: transparent;
+nav #logo img {
+    width: 90px;
+    padding: 10px;
 }
 
-
-
-
-#navbar #logo {
-    width: 120px;
-    margin: 10px;
-    margin-right: 10px;
-    padding-top: 13px;
-    padding-bottom: 12px;
+nav a#logo:hover {
+    background-color: transparent;  
+    box-shadow: none;              
    
 }
+ 
 
 
-
-.dropdown-container {
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #61C6C4;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    padding-top: 12;
+    margin: 20px;
+}
+.sidebar a{
+    width: 100%;
+    padding: 20px;
+}
+.dropdown {
     position: relative;
 }
-
-.dropdown-menu {
+.dropdown .dropdown-content {
+    display: none;
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: 
-        opacity 0.25s,
-        visibility 0.25s;
-    z-index: 10;
+    left: 0;
+    top: 100%;
+    background-color: #61C6C4;
+    min-width: 150px;
+    list-style: none;
+    padding: 10px;
+    margin:10px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering */
 
 }
 
-.dropdown-container:last-child .dropdown-menu {
-    right: 0px;
+.dropdown-content li {
+    padding: 12px;
 }
 
-.dropdown-container:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-button{
+    display: none;
 }
 
-.dropdown-menu a {
-    background-color: #931F28;
-    width: 100%;
-    min-width: 200px;
-    &:hover{
-        background-color: #61C6C4;
-    }
-}
+
+
+
+
 
 
 .contain-grid{
-    background-image:url(../images/resturent.jpg);
+    background-image:url(../images/hero.png);
     background-size: cover;
     background-position: center right;
     height: 100vh;
@@ -116,58 +146,68 @@ body {
     flex-direction: column;
     padding-right: 60px ;
     p{
-        font-size: 26px;
+        font-size: 50px;
         font-weight: 100;
         color: white;
         margin: 30px;
-        background-color: #931F28;
+        opacity: 89%;
         padding: 60px;
-        max-width: 600px;
+        max-width: 1284px;
     }
     
 
     h2{
         font-family:'gilgongo_doror';
         font-size: 60px;
+        opacity: 95%;
         margin: 30px;
-        color: #61C6C4;
-        background-color: #931F28;
+        color: white;
         padding: 60px;
 
 
     }
-
-    a{
-        font-size: 24px;
-        display: inline-block;
-        background-color: #931F28;
-        font-family: 'gilgongo_doror';
-        border-radius: 12px;
-        color: white;
-        text-decoration: none;
-        margin: 40px;
-        padding: 24px;
-        margin-top: 36px;
-        &:hover{
-            background-color: #61C6C4;
-        }
-
-    }
-    
-    
 }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        padding-bottom: 40px;
+       
+      }
+
+    
+        .button{
+            display: inline-block;
+            text-decoration: none;
+            padding: 17px 32px;
+            margin: 30px;
+            background: #931F28;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 8px;
+          }
+          
+            .button:hover {background: #61C6C4}
+
+    
+    
+    
+
 
 .contain{
-    width: 70vw;
+    width: 90vw;
     margin:0px auto;
-    width: 1200px;
+    width: 600px;
 }
 .card {
     
-    max-width: 400px;
-    width: 80vw;
+    max-width: 800px;
+    width:80vw;
     margin: 20px auto;
-    max-width: 400px;
+    width: 700px;
     flex-wrap: wrap;    
     gap: 10px;
     transition: 0.3s;
@@ -184,7 +224,7 @@ body {
   
   .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px 400px;
     gap:20px;
     justify-content: center;
    
@@ -193,11 +233,11 @@ body {
   .card1{
     justify-content: center;
     border: 1px solid #931F28;
-    border-radius: 3px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 60px;
     margin: 30px auto;
     max-width: fit-content;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     text-align: center;
     img{
@@ -247,7 +287,7 @@ body {
   }
   .card{
     width: 100%;
-    border: 1px solid #931F28;
+    border: -4px solid #931F28;
     border-radius: 10px;
     padding: 10px;
     box-shadow: -4px 4px 12px lightgray;
@@ -287,7 +327,22 @@ body {
         
     }
 }
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 780px) {
+    li.hideOnMobile{
+        display: none;
+
+    }
+    .menu-button{
+        display: block;
+    }
+   
+    .sidebar{
+        width: 100%;
+    }
+    
+
     #navbar {
         flex-direction: column;
         align-items: center;
@@ -295,19 +350,46 @@ body {
     }
     #navbar a {
         padding: 0px;
-    }.contain{
+    }
+    .contain{
         flex-direction: column;
         gap: 24px;
         width: 500%;
 
     }
-    .contain h1{
-        margin: 0px;
-        font-size: 32px;
+    .card a,p,h3{
+        font-size: 18px;
 
     }
+    .card img{
+        width: 100%;
+    }
+
+    h1{
+
+        font-size: 30px;
+
+    }
+    .card1{
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        max-width: 400px;
+        width: 90%;
+
+
+        img{
+            padding: 10px;
+            border-radius: 12px;
+            width: 300px;
+        }
+        h2, h3,  a, p{
+            font-size: 20px;
+        }
+    }
+    
     .card-container, .card1{
-        grid-template-columns: 1fr;
+        grid-template-columns: 300px;
         grid-template-areas:
         "t1"
         "i1"
@@ -318,16 +400,76 @@ body {
 
         ;
     }
+    .buttons{
+        display: block;
+    }
+    
+    
+    nav{
+        width: 400px;
+    }
+    .contain-grid{
+        background-image:url(../images/hero.png);
+        background-size: cover;
+        background-position: center right;
+        height: 900px;
+        width: 400px;
+        max-width: 400;
+        display: flex;
+        padding-right: 30px ;
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            margin: 10px;
+            
+        }
+        
+    
+        h2{
+            font-family:'gilgongo_doror';
+            font-size: 30px;
+            margin: 60px;
+            background-color: #931F28;
+            color: white;
+            font-weight: 700;
+            padding: 10px;
+    
+    
+        }
+    }
+    .button{
+        
+    
+        font-size: 12px;
+        
+      }
+      
+        .button:hover {background: #61C6C4}
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 400px;
+         }
+        
+        
+        
+        
+        
+
+    
+    
    
 }
 img{
-    width: 100%;
+    width: 80%;
     object-fit: cover;
+    
 }
 .contain{
     width: 90vw;
-    margin: 48px auto;
-    max-width: 800px;
+    margin: 78px auto;
 }
 .footer {
     position: fixed;
